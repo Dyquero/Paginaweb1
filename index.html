@@ -10,8 +10,6 @@
 
 <body style="background-color:rgb(185, 213, 144);">
     <h1>BIENVENIDO</h1>
-
-
     <Header><img src="Imagenes/Logo.png" alt="" width="150" height="150"></Header>
     <!-- Título principal-->
     <h2>MENU
@@ -25,36 +23,33 @@
         <a href="Contacto.html"> Contacto</a>
     </nav>
     <h3>Video explicativo Tecnologias Backend</h3>
-    <video controls src="Video/Video.webm" type="video/webm" width="350" height="350"></video>
+    <video src="Video/Video.webm" width="350" height="350" controls></video>
     <h3>Registrarse</h3>
     <form>
         <label for="nombre">Ingrese su nombre:</label>
-        <input type="text" placeholder="Escribe tu nombre" maxlength="15" name="nombre">
+        <input type="text" placeholder="Escribe tu nombre" maxlength="15" id="nombre">
         <br>
         <label for="email">Ingrese su email:</label>
-        <input type="email" name="email" placeholder="Correo electrónico">
+        <input type="email" id="email" placeholder="Correo electrónico">
         <br>
         <label for="sexo">Escoja:</label>
-        <input type="radio" name="sexo">Hombre
-        <input type="radio" name="sexo">Mujer
+        <input type="radio" id="sexo">Hombre
+        <input type="radio">Mujer
         <br>
-        <label for="note">Edad</label>
-        <input type="number" min="1" max="100" step="2" required name="edad">
+        <label for="edad">Edad</label>
+        <input type="number" min="1" max="100" step="2" required id="edad">
         <br>
         <label for="tel">Teléfono</label>
-        <input type="tel" name="tel" placeholder="Número telefónico">
+        <input type="tel" id="tel" placeholder="Número telefónico">
         <br>
         <label for="fecha_hora">Seleccione fecha</label>
-        <input type="datetime-local" name="fecha_hora" placeholder="Seleccione">
+        <input type="datetime-local" id="fecha_hora">
         <br>
         <label for="url">URL empresa</label>
-        <input type="url" placeholder="Sitio web de empresa" name="url">
+        <input type="url" placeholder="Sitio web de empresa" id="url">
         <br>
         <input type="submit" value="Enviar">
         <input type="reset" value="Borrar">
-
     </form>
-
 </body>
-
 </html>
