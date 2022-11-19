@@ -24,6 +24,34 @@
         <a href="Ejemplo.html"> Ejemplo</a>
         <a href="Contacto.html"> Contacto</a>
     </nav>
+    <h3>Registrarse</h3>
+    <form>
+        <label for="nombre">Ingrese su nombre:</label>
+        <input type="text" placeholder="Escribe tu nombre" maxlength="15" name="nombre">
+        <br>
+        <label for="email">Ingrese su email:</label>
+        <input type="email" name="email" placeholder="Correo electrónico">
+        <br>
+        <label for="sexo">Escoja:</label>
+        <input type="radio" name="sexo">Hombre
+        <input type="radio" name="sexo">Mujer
+        <br>
+        <label for="note">Edad</label>
+        <input type="number"  min="1" max="100" step="2" required name="edad">
+        <br>
+        <label for="tel">Teléfono</label>
+        <input type="tel" name="tel" placeholder="Número telefónico">
+        <br>
+        <label for="fecha_hora">Seleccione fecha</label>
+        <input type="datetime-local" name="fecha_hora" placeholder="Seleccione">
+        <br>
+        <label for="url">URL empresa</label>
+        <input type="url" placeholder="Sitio web de empresa"name="url">
+        <br>
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Borrar">
+
+    </form>
 
 </body>
 
